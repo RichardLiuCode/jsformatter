@@ -2,11 +2,23 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.43.3/ace.js"
+        integrity="sha512-T2otaV2NuxAJAOCoj8ijyy+eAAadZlpvdLmakrIGVFbBkthgIFqLTXd+T8Z+S+kf4V7Ib5+6f6r4D4IdS9Ey4A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.15.4/beautify.min.js"
+        integrity="sha512-4rLpMC5mO8uHkCL7X0q8P3GQlRTbch5/vp1E6+iwi6nFQc50TGqtM4GRo2cjUpQ8/w9X3+2nVDPNHPOAdOz+Dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <button>Format JavaScript</button>
+    <h1 class="title">JS Formatter</h1>
+    <div class="codeAreaWrapper">
+        <div class="hint">Type or paste your JavaScript code below:</div>
+        <div id="codeArea" name="code"></div>
+    </div>
+    <button id="formatBtn">Format JavaScript</button>
 </body>
 
 </html>
